@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo7 Copy Text to the second text box</title>
+
+    <script>
+
+        function copyText() {
+            const obj1 = document.getElementById("put-1");
+            const obj2 = document.getElementById("put-2");
+            obj2.value = obj1.value;
+        }
+
+        function copyText2() {
+            const obj1 = document.getElementById("put-1");
+            const obj2 = document.getElementById("put-2");
+            obj1.value = obj2.value;
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input onkeyup="copyText()" id="put-1" type="text" />
+    <br />
+    <input onkeyup="copyText2()" id="put-2" type="text" />
+    <br />
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo11 DOM Form</title>
+
+    <script>
+
+        function writeData() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const numOfPrints = document.getElementById('numOfPrints').value;
+
+            for (let i = 0; i < numOfPrints; i++) {
+                console.log(firstName + " " + lastName);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    
+        <h3>Enter Data</h3>
+        <span>First Name:</span> <input type="text" id="firstName" /> <br /><br />
+        <span>Last Name:</span> <input type="text" id="lastName" /> <br /><br />
+        <span>Number of Prints:</span> <input type="number" id="numOfPrints" /> <br /><br />
+        <input type="button" value="Write Data" onclick="writeData()" />
+
+</body>
+</html>

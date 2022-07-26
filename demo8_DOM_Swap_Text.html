@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo7 Swap Between text box</title>
+
+    <script>
+
+        function swapText() {
+            const obj1 = document.getElementById("put-1");
+            const obj2 = document.getElementById("put-2");
+            let temp = obj1.value;
+            obj1.value = obj2.value;
+            obj2.value = temp;
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input id="put-1" type="text" />
+    <br />
+    <input id="put-2" type="text" />
+    <br />
+    <input onclick="swapText()" id="action-1" type="button" value="Swap button" />
+    <br />
+
+</body>
+</html>

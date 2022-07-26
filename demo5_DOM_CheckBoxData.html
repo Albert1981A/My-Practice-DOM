@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo5 DOM Check Box Data</title>
+
+    <script>
+
+        function getCheckBoxData() {
+            const obj = document.getElementById("box");
+            console.log(obj.checked);
+        }
+
+        function changeCheckBox() {
+            const obj = document.getElementById("box");
+            obj.checked = !obj.checked
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <h2>Check Box</h2> 
+    <input id="button-1" type="button" value="Click to Change Check Box" onclick="changeCheckBox()"/> <br />
+    <input id="box" type="checkbox" onchange="getCheckBoxData()" />
+
+</body>
+</html>

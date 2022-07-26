@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo12 DOM Change Header Color</title>
+
+    <script>
+
+        function changeColor() {
+            const txt = document.getElementById('hTxt');
+            txt.style.backgroundColor = "blue";
+            txt.style.color = "yellow";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1 id="hTxt">Hello Every One, I'm a Header</h1>
+    <input onclick="changeColor()" type="button" value="Change Color" />
+
+</body>
+</html>

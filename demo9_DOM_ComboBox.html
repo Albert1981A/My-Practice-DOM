@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo9 DOM ComboBox</title>
+
+    <script>
+
+        function changeCity() {
+            const obj = document.getElementById("combo-1");
+            const div1 = document.getElementById("cityName");
+            div1.innerText = obj.value;
+        }
+
+        function changeNetanya() {
+            const obj = document.getElementById("combo-1");
+            const div1 = document.getElementById("cityName");
+            obj.value = "Netanya";
+            div1.innerText = obj.value;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input onclick="changeNetanya()" type="button" value="Change to Netanya" />
+    <br />
+
+    <select onchange="changeCity()" name="combobox-1" id="combo-1">
+        <option selected disabled value="">Select City</option>
+        <option value="Tel-Aviv">Tel-Aviv</option>
+        <option value="Bat-Yam">Bat-Yam</option>
+        <option value="1">Netanya</option>
+    </select>
+
+    <br /> <br />
+    <div id="cityName">Choose City</div>
+
+</body>
+</html>
+
+<!-- 11:56 -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo13_DOM_Hide_Elements</title>
+
+    <script>
+
+        function hideGreen() {
+            const greenDiv = document.getElementById("greenDiv");
+            greenDiv.style.visibility = "hidden";
+        }
+
+        function showGreen() {
+            const greenDiv = document.getElementById("greenDiv");
+            greenDiv.style.visibility = "visible";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div onmouseout="showGreen()" onmouseover="hideGreen()" style="background-color: red; width: 100px; height: 100px;"></div>
+    <div id="greenDiv" style="background-color: green; width: 100px; height: 100px;"></div>
+    <div style="background-color: blue; width: 100px; height: 100px;"></div>
+
+
+</body>
+</html>
